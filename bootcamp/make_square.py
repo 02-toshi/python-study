@@ -3,7 +3,6 @@ import sys
 
 args = sys.argv
 
-ERROR_MESSAGE = "エラー：0以上の数を指定してください！"
 
 def make_square(size):
     """
@@ -18,6 +17,7 @@ def make_square(size):
     square : string
         正方形の文字列
     """
+    ERROR_MESSAGE = "エラー：0以上の数を指定してください！"
     if size < 0:
         return ERROR_MESSAGE
     elif size == 0:
@@ -61,5 +61,5 @@ if __name__ == '__main__':
     actual = make_square(5)
     assert actual == expected_5, f"{actual}{expected_5}"
     actual = make_square(-1)
-    assert actual == ERROR_MESSAGE
+    assert actual == "エラー：0以上の数を指定してください！"
     main()
