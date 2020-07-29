@@ -20,7 +20,7 @@ Returns : string
 """
 def make_square(size):
     if size < 0:
-        return ERROR_MESSAGE;
+        return ERROR_MESSAGE
     elif size == 0:
         square = ""
     elif size == 1:
