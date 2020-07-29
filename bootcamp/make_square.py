@@ -1,10 +1,23 @@
-import sys
 import os
+import sys
 
 args = sys.argv
 
 ERROR_MESSAGE = "エラー：0以上の数を指定してください！"
 
+"""
+与えられた引数のサイズの正方形を描き、文字列として返却する
+
+Parameters
+----------
+size : int
+    1辺のサイズ
+
+Returns : string
+    正方形の文字列
+----------
+
+"""
 def make_square(size):
     if size < 0:
         return ERROR_MESSAGE;
